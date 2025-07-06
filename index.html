@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- Link Bootstrap CSS & Font Awesome (for icons) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container-fluid">
+    <!-- Logo or icon -->
+    <a class="navbar-brand" href="#">
+      <i class="fa-solid fa-wheat-awn"></i> HarvestPro
+    </a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#trust">Why Farmers Trust Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#works">How it Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing/Estimate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Call-to-action button -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+    </div>
+  </div>
+</nav>
+<section class="bg-secondary text-white text-center py-5" id="home">
+  <div class="container">
+  
+    <h1 class="display-4">Harvest On Time. Earn More.</h1>
+    <p class="lead">Book professional harvesting services for your field — fast, reliable, and hassle-free.</p>
+    <!-- BOOk YOUR HARVEST NOW -->
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Your Harvest Now</button>
+  </div>
+</section>
+<!-- services -->
+<section class=" py-5" id="services">
+  <div class="container  text-center">
+    <h2 class="mb-4 text-success">Services</h2>
+    <div id="howItWorksCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="2500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+             <img src="images/grain.avif" class="d-block mx-auto mb-3" alt="paddy" style="height: 500px;">
+          <h5>Paddy</h5>
+        </div>
+
+        <div class="carousel-item">
+             <img src="images/corn.webp" class="d-block mx-auto mb-3" alt="maizze" style="height: 500px;">
+          <h5>Maizze</h5>
+        </div>
+        <div class="carousel-item">
+             <img src="images/grain.avif" class="d-block mx-auto mb-3" alt="corn" style="height: 500px;">
+          <h5>corn</h5>
+        </div>
+
+           <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#howItWorksCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#howItWorksCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="py-5" id="trust">
+  <div class="container text-center">
+    <h2 class="mb-4 text-success" >Why Farmers Trust Our Harvesting Services</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card border-0 bg-success text-white shadow-sm">
+          <div class="card-body">
+            <i class="fa-solid fa-tractor fa-2x"></i>
+            <h5 class="card-title py-2">Modern Harvesters</h5>
+            <p class="card-text">Advanced machines ensure efficient, clean and reduced crop loss.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 bg-success text-white  shadow-sm">
+          <div class="card-body">
+           <i class="fa-solid fa-person fa-2x"></i>
+            <h5 class="card-title py-2">Expert Operators</h5>
+            <p class="card-text">Experienced operators handle your crops with care and precision.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card  bg-success border-0 text-white  shadow-sm">
+          <div class="card-body">
+            <i class="fa-solid fa-wallet fa-2x"></i>
+            <h5 class="card-title py-2">Affordable Pricing</h5>
+            <p class="card-text">Clear per-hour rates with no hidden charges. Transparent and fair.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0  bg-success text-white shadow-sm">
+          <div class="card-body">
+            <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>
+            <h5 class="card-title py-2">Service Across Regions</h5>
+            <p class="card-text">Available in multiple districts — we come directly to your field.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- How It Works Section -->
+<section class=" py-5" id="works">
+  <div class="container  text-center">
+    <h2 class="mb-4 text-success">How It Works</h2>
+    <div id="howItWorksCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="2500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <i class="fa-solid fa-phone-volume"></i>
+          <h5>Book Online or Call</h5>
+          <p>Select crop type, field details, and your preferred schedule.</p>
+        </div>
+
+        <div class="carousel-item">
+          <p><i class="fa-solid fa-circle-check"></i></p>
+          <h5>Confirm & Schedule</h5>
+          <p>Our team verifies your booking and confirms the details with you.</p>
+        </div>
+
+        <div class="carousel-item">
+          <i class="fa-solid fa-tractor"></i>
+          <h5>We Harvest</h5>
+          <p>Our machine and operator arrive on time and complete the work efficiently.</p>
+        </div>
+
+        <div class="carousel-item">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <h5>Pay & Relax</h5>
+          <p>Pay after service and enjoy a worry-free harvest season.</p>
+        </div>
+
+      </div>
+
+      <!-- Optional controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#howItWorksCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#howItWorksCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Pricing/estimation -->
+ <section id="pricing">
+<div class="container py-5" id="Pricing">
+  <h2 class="text-center mb-4 text-success">🌾 Harvest Pricing Estimator</h2>
+
+  <form onsubmit="calculateCost(); return false;" class="bg-light p-4 rounded">
+    <div class="mb-3">
+      <label for="crop" class="form-label">Crop Type</label>
+      <select id="crop" class="form-select" required>
+        <option value="" disabled selected>Select Crop</option>
+        <option value="paddy">Paddy (₹1500/hr)</option>
+        <option value="maize">Maize (₹2500/hr)</option>
+      </select>
+    </div>
+
+    <!-- Start Time -->
+    <div class="mb-3">
+      <label class="form-label">Start Time</label>
+      <div class="row g-2">
+        <div class="col-4">
+          <input type="number" id="startHour" class="form-control" min="1" max="12" placeholder="Hour" required>
+        </div>
+        <div class="col-4">
+          <input type="number" id="startMinute" class="form-control" min="0" max="59" placeholder="Min" required>
+        </div>
+        <div class="col-4">
+          <select id="startAMPM" class="form-select" required>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Time -->
+    <div class="mb-3">
+      <label class="form-label">End Time</label>
+      <div class="row g-2">
+        <div class="col-4">
+          <input type="number" id="endHour" class="form-control" min="1" max="12" placeholder="Hour" required>
+        </div>
+        <div class="col-4">
+          <input type="number" id="endMinute" class="form-control" min="0" max="59" placeholder="Min" required>
+        </div>
+        <div class="col-4">
+          <select id="endAMPM" class="form-select" required>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-grid">
+      <button type="submit" class="btn btn-success">Calculate Cost</button>
+    </div>
+
+    <div id="result" class="mt-4 alert alert-info d-none"></div>
+  </form>
+</div>
+
+</section>
+
+ <!-- book now -->
+
+  <!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">📅 Book Your Harvest</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Booking Form -->
+        <form enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="farmerName" class="form-label">Farmer Name</label>
+            <input type="text" class="form-control" id="farmerName" placeholder="Enter your name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter your mobile number" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="cropType" class="form-label">Crop Type</label>
+            <select class="form-select" id="cropType" required>
+              <option selected disabled>-- Select Crop --</option>
+              <option value="paddy">Paddy</option>
+              <option value="maize">Maize</option>
+              <option value="wheat">Wheat</option>
+              <option value="sugarcane">Sugarcane</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="fieldSize" class="form-label">Field Size (acres or hectares)</label>
+            <input type="text" class="form-control" id="fieldSize" placeholder="e.g., 5 acres or 2 hectares" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="location" class="form-label">Location (village, district, pin code)</label>
+            <input type="text" class="form-control" id="location" placeholder="e.g., Thanjavur, TN, 613001" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="preferredDate" class="form-label">Preferred Harvest Date</label>
+            <input type="date" class="form-control" id="preferredDate" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="instructions" class="form-label">Special Instructions (Optional)</label>
+            <textarea class="form-control" id="instructions" rows="3"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="fieldPhoto" class="form-label">Upload Field Photos (Optional)</label>
+            <input class="form-control" type="file" id="fieldPhoto" accept="image/*" multiple>
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">Submit Booking Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<section class="py-5" id="contact">
+  <div class="container">
+    <h2 class="text-center mb-4 text-success">Contact Us</h2>
+    <p class="text-center text-muted mb-5">Have questions or need help with booking? Reach out to us anytime!</p>
+
+    <div class="row">
+      <!-- Contact Info -->
+      <div class="col-md-6 mb-4">
+        <h5><i class="fa-solid fa-map-pin"></i> Our Office</h5>
+        <p>123 Harvest Road,<br>Agri Town, Tamil Nadu - 600001</p>
+
+        <h5><i class="fa-solid fa-phone"></i> Phone</h5>
+        <p>+91 7010681977</p>
+
+        <h5><i class="fa-solid fa-envelope"></i> Email</h5>
+        <p>support@harvestbooking.com</p>
+
+        <h5><i class="fa-solid fa-calendar"></i> Office Hours</h5>
+        <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+
+        <h5><i class="fa-solid fa-globe"></i> Follow Us</h5>
+        <h5>
+          <a href="#" class="me-2 text-black"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+          <a href="#" class="me-2 text-black"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="#" class="me-2 text-black"><i class="fa-brands fa-square-whatsapp fa-2x"></i></a>
+        </h5>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <form class="border p-4 rounded bg-light">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<footer class="bg-success text-white text-center py-2 ">
+  <div class="container">
+    <p>Copyright © 2025 Harvestpro Company. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Link Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
